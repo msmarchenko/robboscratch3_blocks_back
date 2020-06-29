@@ -707,3 +707,23 @@ Blockly.Blocks['robot_claw_state'] = {
   }
 
 };
+Blockly.Blocks['robot_wall_color'] = {
+  /**
+   * Block to turn left.
+   * @this Blockly.Block
+   */
+  init: function(locale) {
+    this.jsonInit({
+
+    "message0": "Set wall color %1",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "COLOR"
+      }
+    ],
+      "category": Blockly.Categories.robot,
+      "extensions": ["colours_robot", "shape_statement"]
+    });
+  }
+};
