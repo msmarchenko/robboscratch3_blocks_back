@@ -715,7 +715,7 @@ Blockly.Blocks['robot_wall_color'] = {
   init: function(locale) {
     this.jsonInit({
 
-    "message0": "Set wall color %1",
+    "message0": Blockly.Msg.ROBOT_SET_WALL_COLOR,
     "args0": [
       {
         "type": "input_value",
